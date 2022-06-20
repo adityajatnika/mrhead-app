@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/gbWajah"
+        android:layout_width="259dp"
+        android:layout_height="338dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/body" />
+
+    <ImageView
+        android:id="@+id/gbRambut"
+        android:layout_width="286dp"
+        android:layout_height="115dp"
+        app:layout_constraintEnd_toEndOf="@+id/gbWajah"
+        app:layout_constraintStart_toStartOf="@+id/gbWajah"
+        app:layout_constraintTop_toTopOf="@+id/gbWajah"
+        app:srcCompat="@drawable/hair" />
+
+    <ImageView
+        android:id="@+id/gbAlis"
+        android:layout_width="115dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintBottom_toBottomOf="@+id/gbRambut"
+        app:layout_constraintEnd_toEndOf="@+id/gbWajah"
+        app:layout_constraintStart_toStartOf="@+id/gbWajah"
+        app:layout_constraintTop_toBottomOf="@+id/gbRambut"
+        app:srcCompat="@drawable/eyebrow" />
+
+    <ImageView
+        android:id="@+id/gbMata"
+        android:layout_width="69dp"
+        android:layout_height="67dp"
+        app:layout_constraintEnd_toEndOf="@+id/gbWajah"
+        app:layout_constraintStart_toStartOf="@+id/gbWajah"
+        app:layout_constraintTop_toBottomOf="@+id/gbAlis"
+        app:srcCompat="@drawable/eyes" />
+
+    <ImageView
+        android:id="@+id/gbJanggut"
+        android:layout_width="157dp"
+        android:layout_height="121dp"
+        app:layout_constraintBottom_toBottomOf="@+id/gbWajah"
+        app:layout_constraintEnd_toEndOf="@+id/gbWajah"
+        app:layout_constraintStart_toStartOf="@+id/gbWajah"
+        app:srcCompat="@drawable/beard" />
+
+    <ImageView
+        android:id="@+id/gbKumis"
+        android:layout_width="289dp"
+        android:layout_height="73dp"
+        android:layout_marginBottom="75dp"
+        app:layout_constraintBottom_toBottomOf="@+id/gbWajah"
+        app:layout_constraintEnd_toEndOf="@+id/gbWajah"
+        app:layout_constraintStart_toStartOf="@+id/gbWajah"
+        app:layout_constraintTop_toTopOf="@+id/gbJanggut"
+        app:srcCompat="@drawable/moustache" />
+
+    <CheckBox
+        android:id="@+id/ckRambut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Rambut"
+        android:textColorLink="#2196F3"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gbWajah" />
+
+    <CheckBox
+        android:id="@+id/ckJanggut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Janggut"
+        android:textColorLink="#2196F3"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/ckALis"
+        app:layout_constraintTop_toBottomOf="@+id/ckALis" />
+
+    <CheckBox
+        android:id="@+id/ckKumis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kumis"
+        android:textColorLink="#2196F3"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/ckRambut"
+        app:layout_constraintTop_toBottomOf="@+id/ckRambut" />
+
+    <CheckBox
+        android:id="@+id/ckALis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:text="Alis"
+        android:textColorLink="#2196F3"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/ckRambut"
+        app:layout_constraintTop_toTopOf="@+id/ckRambut" />
+
+    <Button
+        android:id="@+id/btAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:text="About Us"
+        app:layout_constraintBottom_toBottomOf="@+id/btBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintStart_toEndOf="@+id/btBack" />
+
+    <Button
+        android:id="@+id/btBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="50dp"
+        android:text="Back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ckKumis" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "25884699239",
+    "project_id": "mr-head-ce513",
+    "storage_bucket": "mr-head-ce513.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:25884699239:android:7d3b204c1d8d758eb802c2",
+        "android_client_info": {
+          "package_name": "com.example.mrhead"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "25884699239-mfqligho8srn3pe9l83obgbvruga4s2k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaUmuVn5SPMD91dzLNJEBlSVBRu5L57KI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "25884699239-mfqligho8srn3pe9l83obgbvruga4s2k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

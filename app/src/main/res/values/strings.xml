@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Mr Head</string>
+    <string name="terms"><u>Register now</u></string>
+    <string name="login"><u>Login now</u></string>
+</resources>
